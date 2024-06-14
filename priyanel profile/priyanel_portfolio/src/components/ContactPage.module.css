@@ -1,0 +1,257 @@
+.contactPageChild {
+  width: 1px;
+  height: calc(100% + 1px);
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  bottom: -1px;
+  left: 512px;
+  border-right: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+}
+.keyboardIcon,
+.mailIcon {
+  position: absolute;
+  margin: 0 !important;
+  object-fit: contain;
+}
+.mailIcon {
+  width: 75px;
+  height: 71.7px;
+  right: 165px;
+  bottom: 169.3px;
+}
+.keyboardIcon {
+  width: 153px;
+  height: 115.4px;
+  top: 0;
+  right: 277px;
+}
+.skills {
+  width: 424px;
+  position: relative;
+  font-weight: 800;
+  background: linear-gradient(
+    90deg,
+    #527fff,
+    #2070be 36.98%,
+    #5776e6 70.31%,
+    #bcdaf8
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  z-index: 2;
+}
+.skillsTitleContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+}
+.programmingLanguages {
+  background: linear-gradient(
+    89.79deg,
+    #c58fb2,
+    rgba(203, 96, 96, 0.51) 48.96%,
+    #7cbefd
+  );
+}
+.frameworks,
+.programmingLanguages,
+.tools {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.tools {
+  background: linear-gradient(270deg, #a1ea6f, #d4ecc3);
+}
+.frameworks {
+  background: linear-gradient(-88.45deg, #8f89fa, rgba(157, 152, 237, 0));
+}
+.concepts {
+  color: var(--color-plum);
+}
+.cloudServices {
+  background: linear-gradient(90deg, #f0b762, #7594ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.softSkills {
+  color: var(--color-goldenrod);
+}
+.iAmPleasedContainer {
+  align-self: stretch;
+  height: 221px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.softSkills1 {
+  position: relative;
+  filter: blur(4.8px);
+}
+.softSkillsContainer {
+  width: 342px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-top: -95px;
+  color: var(--color-goldenrod);
+}
+.portfolioDescriptionContaine {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  min-height: 221px;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+}
+.contactPageInner,
+.skillsTitleContainerParent {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.skillsTitleContainerParent {
+  width: 908px;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-46xl);
+}
+.contactPageInner {
+  width: 1418px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 var(--padding-xl);
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.hireButton {
+  position: absolute;
+  top: 565px;
+  left: 468px;
+  border-radius: 50%;
+  background-color: var(--color-gray-200);
+  width: 190px;
+  height: 24px;
+}
+.frameChild {
+  position: absolute;
+  top: 266px;
+  left: 284px;
+  width: 182.6px;
+  height: 203.5px;
+  object-fit: contain;
+}
+.gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: radial-gradient(
+    50% 50%at 50% 50%,
+    rgba(110, 191, 244, 0.22),
+    rgba(50, 15, 133, 0)
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.hireButtonParent {
+  height: 736px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+}
+.leftSkills {
+  width: 750px;
+  margin: 0 !important;
+  position: absolute;
+  bottom: 104px;
+  left: -166px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.contactPage,
+.contactPageItem {
+  align-self: stretch;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.contactPageItem {
+  height: 1px;
+  border-top: 1px solid var(--color-whitesmoke-200);
+}
+.contactPage {
+  height: 1024px;
+  background-color: var(--color-1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-165xl) 0 var(--padding-355xl);
+  gap: var(--gap-355xl);
+  max-width: 100%;
+  text-align: right;
+  font-size: var(--font-size-119xl);
+  color: var(--color-white);
+  font-family: var(--font-rethink-sans);
+}
+@media screen and (max-width: 1400px) {
+  .contactPage {
+    padding-top: var(--padding-101xl);
+    padding-bottom: var(--padding-224xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .skillsTitleContainerParent {
+    gap: var(--gap-13xl);
+  }
+}
+@media screen and (max-width: 825px) {
+  .skills {
+    font-size: var(--font-size-36xl);
+  }
+  .iAmPleasedContainer,
+  .softSkills1 {
+    font-size: var(--font-size-7xl);
+  }
+  .contactPage {
+    gap: var(--gap-168xl);
+    padding-top: var(--padding-59xl);
+    padding-bottom: var(--padding-139xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .skills {
+    font-size: var(--font-size-15xl);
+  }
+  .iAmPleasedContainer,
+  .softSkills1 {
+    font-size: var(--font-size-lgi);
+  }
+  .skillsTitleContainerParent {
+    gap: var(--gap-base);
+  }
+  .contactPage {
+    gap: var(--gap-74xl);
+  }
+}

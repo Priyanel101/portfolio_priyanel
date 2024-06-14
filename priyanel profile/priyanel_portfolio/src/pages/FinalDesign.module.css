@@ -1,0 +1,64 @@
+.contactPageChild,
+.contactPageItem {
+  position: absolute;
+  box-sizing: border-box;
+}
+.contactPageChild {
+  top: 0;
+  left: 512px;
+  border-right: 1px solid var(--color-whitesmoke-200);
+  width: 1px;
+  height: 1025px;
+}
+.contactPageItem {
+  top: 1024px;
+  left: 0;
+  border-top: 1px solid var(--color-whitesmoke-200);
+  width: 1441px;
+  height: 1px;
+}
+.bentoIcon,
+.wrapperBento {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.bentoIcon {
+  object-fit: contain;
+  top: 1px;
+  transform: scale(1.14);
+}
+.wrapperBento {
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapperBentoParent {
+  position: absolute;
+  top: 40px;
+  left: 795px;
+  width: 564px;
+  height: 941px;
+}
+.contactPage {
+  align-self: stretch;
+  height: 1024px;
+  position: relative;
+  background-color: var(--color-1);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.finalDesign {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+}

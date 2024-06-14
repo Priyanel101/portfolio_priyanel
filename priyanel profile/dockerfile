@@ -1,0 +1,29 @@
+# Stage 1: Build the React application
+FROM node:16 AS build
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json (if exists) for dependency installation
+COPY Priyanel/package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY Priyanel .
+
+# Build the React app
+RUN npm run build
+
+# Stage 2: Serve the built React application using Nginx
+FROM nginx:alpine
+
+# Copy build output from the build stage to serve through Nginx
+COPY --from=build /app/build /usr/share/nginx/html
+
+# Expose port 80 to the Docker network
+EXPOSE 80
+
+# Default command to start Nginx when the container starts
+CMD ["nginx", "-g", "daemon off;"]
